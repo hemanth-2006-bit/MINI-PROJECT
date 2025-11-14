@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Smart Expense Tracker</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <h1>Smart Expense Tracker</h1>
+  <form id="expenseForm">
+    <input type="number" id="amount" placeholder="Amount" required>
+    <input type="text" id="category" placeholder="Category" required>
+    <input type="date" id="date" required>
+    <input type="text" id="note" placeholder="Note">
+    <button type="submit">Add</button>
+  </form>
+  <h2>Total: ₹<span id="total"></span></h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Amount</th><th>Category</th><th>Date</th><th>Note</th>
+      </tr>
+    </thead>
+    <tbody id="expenseTable"></tbody>
+  </table>
+  <canvas id="categoryChart"></canvas>
+  <canvas id="trendChart"></canvas>
+  <script src="main.js"></script>
+</body>
+</html>
+
